@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <link rel="stylesheet" href="mockup_tyler.css">  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">   
+    <title>sangmi lee</title>
+    <!--
+         <link rel="shortcut icon" type="image/png" href="favicon.png"> 
+    -->
+</head>
+<body>
+    <div class="header">
+        <div class="name">
+            <span>{ Sangmi Lee }</span>
+        </div>
+        <ul class="nav-link">
+            <li class="nav-item">home</li>
+            <li class="nav-item">about</li>
+            <li class="nav-item">skills</li>
+            <li class="nav-item">portfolio</li>
+            <li class="nav-item">contact</li>
+        </ul>
+    </div>
+    <div class="background">
+        <div class="center-items"> 
+            <span class="typing"></span> <br>
+            <h2>Full Stack Web Developer</h2>
+            <div class="icon-items">
+                <i class="fas fa-box fa-2x"></i>
+                <i class="fas fa-clipboard-list fa-2x"></i>
+                <i class="fas fa-boxes fa-2x"></i>
+            </div>            
+        </div> 
+
+    </div>
+    <div class="content">
+        
+    </div>
+    
+    <script src="mockup_tyler.js"></script>     
+    <script>
+            // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              /*Since documentElement is undefined in Chrome / Firefox */
+              if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementsByClassName("header")[0].style.padding = "15px";
+                document.getElementsByClassName("name")[0].style.fontSize = "25px";
+                for(var i=0; i< document.getElementsByClassName("nav-item").length; i++){
+                    document.getElementsByClassName("nav-item")[i].style.fontSize = "25px";
+                }
+                
+              } else {
+                document.getElementsByClassName("header")[0].style.padding = "15px";
+                document.getElementsByClassName("name")[0].style.fontSize = "15px";
+                for(var i=0; i< document.getElementsByClassName("nav-item").length; i++){
+                    document.getElementsByClassName("nav-item")[i].style.fontSize = "14px";
+                }                
+              }
+            }
+            </script>
+</body>
+</html>
+
+
+  
